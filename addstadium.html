@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add venue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=txt], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+button {
+    background-color: #000000;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body style="background-color:lightblue;">
+<button>
+    <a style="text-decoration:none;color:white;" href="admin1st.html">Back</a>
+</button>
+<button style="float:right;" >
+    <a style="text-decoration: none;color: white;" href="admin.html">Logout</a>
+</button>
+<h3>Add Venue</h3>
+
+<div class="container">
+  <form action="addstadium.php" method="post">
+
+
+    <label for="venue_name">Venue Name</label>
+    <input type="txt" name="venue_name" placeholder="Enter venue Name.." required>
+
+    <label for="capacity">Capacity</label>
+    <input type="number" name="capacity" placeholder="Capacity .." required> 
+
+    <label for="DOI">DOI</label>
+    <input type="date" name="DOI" placeholder="DOI.." required>
+
+    <label for="city">city</label>
+    <input type="txt" name="city" placeholder="Enter city.." required>
+
+     <label for="home_team">Home Team</label>
+    <input type="txt" name="home_team" placeholder=" Home Team.." required>
+
+    
+    <input type="submit" style="float:left;" value="Submit">
+  
+  </form>
+</div>
+
+</body>
+</html>

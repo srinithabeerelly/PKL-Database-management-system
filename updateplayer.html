@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add_Players</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+button {
+    background-color: #000000;
+    }
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body style="background-color:lightblue;" >
+    <button>
+        <a style="text-decoration:none;color:white;" href="admin1st.html">Back</a>
+    </button>
+    <button style="float:right;" >
+        <a style="text-decoration: none;color: white;" href="admin.html">Logout</a>
+    </button>
+    <h3>Add Player</h3>
+    <div class="container">
+        <form action="updateplayer.php" method="post">
+
+            <label for="player_id">Player ID</label>
+            <input type="number" name="player_id" placeholder="Player ID.." required>
+
+            <label for="no_of_matches">No of Matches</label>
+            <input type="number" name="no_of_matches" placeholder="Number of Matches Played.." required>
+
+            
+                
+            <label for="raid_points">Raid Points</label>
+            <input type="number" name="raid_points" placeholder="Player Raid points.." required>
+
+            <label for="tackle_points">Tackle Points</label>
+            <input type="number" name="tackle_points" placeholder="Player Tackle Points.." required>
+
+            <label for="highest_raid_points">Highest Raid Points</label>
+            <input type="text" name="highest_raid_points" placeholder="Player's highest_raid_points.." required>
+
+            <label for="highest_tackle_points">Highest Tackle Points</label>
+            <input type="text" name="highest_tackle_points" placeholder="Player's highest_tackle_points.." required>
+            
+            <input type="submit" style="float:left;" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

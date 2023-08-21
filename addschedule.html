@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add_Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=number], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=date], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    button {
+        background-color: #000000;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body style="background-color:lightblue;">
+    <button>
+        <a style="text-decoration:none;color:white;" href="admin1st.html">Back</a>
+    </button>
+    <button style="float:right;" >
+        <a style="text-decoration: none;color: white;" href="admin.html">Logout</a>
+    </button>
+
+    <h3>Add Schedule</h3>
+    <div class="container">
+        <form action="addschedule.php" method="post">
+
+            <label for="match_number">Match No</label>
+            <input type="number" name="match_number" placeholder="Match number.." required>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" placeholder="Date.." required>
+
+            <label for="team_1">Team_1 Name</label>
+            <input type="text" name="team_1" placeholder="team 1 name" required>
+
+            <label for="team_2">Team_2 Name</label>
+            <input type="text" name="team_2" placeholder="team 2 name" required>
+
+            <label for="date">Venue</label>
+            <input type="text" name="venue" placeholder="Venue.." required>
+
+            <input type="submit" style="float:left;" value="Submit" required>
+        </form>
+    </div>
+</body>
+</html>
